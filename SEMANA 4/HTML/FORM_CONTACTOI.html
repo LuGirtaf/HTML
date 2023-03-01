@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/CONTACTO.css">
+</head>
+<body>
+   <header>
+    <img src="../img/incap.png" width="100" height="100" alt="incap">
+    <h1>LISTAS EN HTML</h1>
+   </header>
+   <nav>
+    <ul>
+        <li type="disc" style="color: red;">Home</li>
+        <li type="square">Productos</li>
+        <li type="circle">Servicios</li>
+        <li>Contacto</li>
+    </ul>
+   </nav> 
+   <section>
+    <form action="datos.php" method="post">
+        <!-- seccion de fieldset -->
+        <fieldset>
+            <!-- seccion ingreso de nombre -->
+            <label for="">Nombre completo</label> 
+            <input type="text" name="nombre" placeholder="&#9756; Ingrese su nombre" re>
+            <br><br>
+            <!-- seccion de e-mail -->
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="&#9756; Ingrese su Email" required>
+            <br><br>
+            <!-- seccion de contraseña -->
+            <label for="">Contraseña</label>
+            <input type="password" name="contraseña" placeholder="&#9745; Ingrese su contraseña" required>
+            <br><br>
+            <!-- seccion de hobbies -->
+            <label for="">Selecciona tus Hobbies</label>
+            <br>
+            <input type="checkbox" name="cine">CINE <br>
+            <input type="checkbox" name="lectura">LECTURA <br>
+            <input type="checkbox" name="Deporte">DEPORTE <br>
+            <br>
+            <!-- sección de estado civil -->
+            <label for="">Estado Civil</label> <br>
+            <input type="radio" name="estcivil" value="casado"> CASADO(a) <br>
+            <input type="radio" name="estcivil" value="soltero"> SOLTERO(a) <br>
+            <input type="radio" name="estcivil" value="viudo"> VIUDO(a) <br>
+            <br><br>
+            <!-- Seleccion de opción lista -->
+            <label for="">PROGRAMAS TECNICOS</label>
+            <select name="select" id="">
+                <option>Seleccione el programa</option>
+                <option>Sistemas</option>
+                <option>Diseño grafico</option>
+                <option>Contabilidad</option>
+            </select>
+            <br><br>
+            <!-- seccion de comentarios -->
+            <label for="">Tu comentario</label>
+            <br>
+            <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+            <!-- FINALIZA FIELDSET -->
+        </fieldset>
+        <br><br>
+        <hr>
+        <!-- seccion de botones -->
+        <button type="submit"> ENVIAR</button>
+        <button type="reset"> CANCELAR</button>
+        <br><br>
+        <form>
+            <section>
+                <!-- seccion de footer -->
+                <footer>
+                    <p>Derechos reservados &copy;2023 &#64; Luisa</p>
+                </footer>
+            </section>
+        </form>
+    </form>
+   </section>
+</body>
+</html>
