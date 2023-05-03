@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura Pos</title>
+</head>
+<body>
+    <center>
+        <img src="./IMG/incap.jpeg" alt="" width="150" height="150">
+        <h1>SUPERMERCADO EL VACANO</h1>
+        <h2>LIQUIDACION FACTURA DE VENTA POS</h2>
+        <script>
+            //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular subtotal, descuento 10%, iva 19% y neto a pagar. Enviar mensaje Gracias por su compra//
+ const SPeso = new Intl.NumberFormat('es-CO', {
+       style: 'currency',
+       currency: 'COP',
+       minimumFractionDigits: 0
+     });
+     //Variables
+    let suma=0;
+    let subt=0;
+    let netop=0;
+    let desc=0;
+    let iva=0;
+    let fpago=0;
+    let pago=0;
+    let num=0;
+    let cambio=0;
+    let f=new Date();
+    let nombrep=new Array();
+    let precio=new Array();
+    let cant=new Array();
+    let Subtot=new Array();
+    //
+    nomstd=prompt("Ingrese nombre del cajero");
+    num=prseint(prompt("Ingrese cantidad de productos a comprar"));
+    var i;
+    for (i=0;i<num;i++){
+        nombrep[i]=prompt('Ingrese nombre del producto');
+                precio[i]=prompt('Ingrese precio del producto a comprar');
+                cant[i]=prompt('Ingrese la cantidad deseada a comprar');
+                subt[i] = precio[i]*cant[i];
+                suma = suma + subt[i];//Acumulador totales
+            }
+for (i=0;i<num;i++){
+                nombrep[i]=prompt('Ingrese nombre del producto');
+                precio[i]=prompt('Ingrese precio del producto a comprar');
+                cant[i]=prompt('Ingrese la cantidad deseada a comprar');
+                subtot[i] = precio[i]*cant[i];
+                suma = suma + subtot[i];//Acumulador totales
+            }
+
+    }
+
+
+        </script>
+    </center>
+    
+</body>
+</html>
